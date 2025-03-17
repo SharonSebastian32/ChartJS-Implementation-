@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   Chart as ChartJS,
   ArcElement,
@@ -9,18 +8,11 @@ import {
   Legend,
   Filler,
 } from "chart.js";
-import { Pie } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 
-ChartJS.register(
-  CategoryScale,
-  ArcElement,
-  ArcElement,
-  Filler,
-  Title,
-  Tooltip,
-  Legend
-);
-function PieChart() {
+ChartJS.register(CategoryScale, ArcElement, Filler, Title, Tooltip, Legend);
+
+function DoughNutChart() {
   const salesData = {
     labels: [
       "Jan",
@@ -54,7 +46,6 @@ function PieChart() {
           "#FFCE56",
           "#75C7B8",
         ],
-
         hoverOffset: 4,
         fill: true,
       },
@@ -63,10 +54,10 @@ function PieChart() {
 
   return (
     <>
-      <h1>Pie Chart</h1>
-      <Pie data={salesData} />
+      <h1>Doughnut Chart</h1>
+      <Doughnut data={salesData} />
     </>
   );
 }
 
-export default PieChart;
+export default DoughNutChart;

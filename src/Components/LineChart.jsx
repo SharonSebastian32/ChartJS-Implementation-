@@ -85,7 +85,6 @@ const salesData = {
 function LineChart() {
   return (
     <>
-      <h2>Chartjs Implementation</h2>
       <h1>Line Chart</h1>
       <Line data={salesData} />
     </>

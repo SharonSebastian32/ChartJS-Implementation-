@@ -22,7 +22,6 @@ ChartJS.register(
   Legend
 );
 
-
 function BarChart() {
   const salesData = {
     labels: [
@@ -66,7 +65,7 @@ function BarChart() {
 
   return (
     <>
-      <h1>Bar Chart Implementation</h1>
+      <h1>Bar Chart</h1>
       <Bar data={salesData}></Bar>
     </>
   );
